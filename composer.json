@@ -1,0 +1,33 @@
+{
+    "name": "muscobytes/proxyplant-laravel",
+    "type": "package",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": ["proxy", "providers", "laravel"],
+    "autoload": {
+        "psr-4": {
+            "Muscobytes\\ProxyplantLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stanislav Surskiy",
+            "email": "ssurskiy@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "muscobytes/proxyplant": "^1.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muscobytes\\ProxyplantLaravel\\Providers\\ProxyplantServiceProvider"
+            ],
+            "aliases": {
+                "Proxyplant": "Muscobytes\\ProxyplantLaravel\\Facades\\ProxyplantFacade"
+            }
+        }
+    }
+}
